@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Review HTML Knowledge</title>
 </head>
 <body>
@@ -17,55 +18,373 @@
 		<p>HTML được sử dụng để xây dựng cấu trúc của một trang web.</p>
 		<p>HTML cung cấp các tags (thẻ) để xây dựng các thành phần của trang web.</p>
 
-		<h3>What's HTML elements</h3>
-		<p>HTML elements: mỗi một tag (thẻ) HTML đều được gọi là một HTML elements</p>
-		<p>Mỗi elements trong HTML đều có nhiệm vụ chức năng riêng: &lth1&gt hiển thị tiêu đề chính trong HTML document, &lth2&gt hiển thị tiêu đề phụ thứ 2, &ltimg&gt hiển thị hình ảnh vào trong HTML document, ...
-</p>
-		<p>Mỗi elements đều có những attributes (thuộc tính) giúp bổ sung thêm các thông tin cho element đó, thay vì để nó như mặc định.</p>
+		<h3>What's HTML tags</h3>
 
-		<p><b>Lưu ý</b>: việc sử dụng các HTML elements vào đúng chức năng nhiệm vụ của nó rất quan trọng, giúp search engine hiểu và sreen reader hiểu nội dung cấu trúc trang web tốt hơn từ đó trang web dễ dàng lên SEO hơn.</p>
-		<h4>Types of elements</h4>
+		<p>Tag (thẻ) trong HTML có cấu trúc như sau: </p>
+		<p><code>&lttag&gt ... content ... &lt/tag&gt</code></p>
+		<p><code>&lttag&gt</code>: thẻ này được gọi là thẻ mở (open tag)</p>
+		<p><code>&lt/tag&gt</code>: thẻ này được gọi là thẻ đóng (close tag)</p>
+		<p><code>... content ...</code>: chứa nội dung text hoặc có thể là những thẻ HTML khác.</p>
 
-		<p>Trong HTML có 2 loại emlements: </p>
+		<p><b>Lưu ý</b>: Thẻ đóng (close tag) rất quan trọng, khi bạn code lưu ý phải luôn có thẻ đóng. </p>
+
+		<p>Mỗi thẻ trong HTML đều có nhiệm vụ chức năng riêng: &lth1&gt hiển thị tiêu đề chính trong HTML document, &lth2&gt hiển thị tiêu đề phụ thứ 2, &ltimg&gt hiển thị hình ảnh vào trong HTML document, ... </p>
+
+		<p><b>Lưu ý</b>: việc sử dụng các thẻ HTML vào đúng chức năng nhiệm vụ của nó rất quan trọng, giúp search engine và sreen reader hiểu nội dung cấu trúc trang web tốt hơn từ đó trang web dễ dàng lên SEO hơn.</p>
+
+		<h4>Types of tags</h4>
+
+		<p>Trong HTML có 2 loại thẻ HTML: </p>
 		<ul>
-			<li><p>Content elements</p></li>
-			<li><p>Empty elements</p></li>
+			<li><p>Content tags</p></li>
+			<li><p>Empty tags</p></li>
 		</ul>
-		<p>Content elements: Là những thẻ HTML có chứa nội dung trong thẻ có thẻ đóng và thẻ mở.</p>
-		<p>Empty elements: Là những thẻ HTML không có thẻ đóng, không có nội dung.</p>
+		<p>Content tags: Là những thẻ HTML có chứa nội dung trong thẻ có thẻ đóng và thẻ mở.</p>
+		<p>Empty tags: Là những thẻ HTML không có thẻ đóng, không có nội dung chỉ có mỗi thẻ mở</p>
 
-		<h4>How an elements display on browser</h4>
+		<h3>What's HTML elements</h3>
+
+		<p>Mọi tags (thẻ) HTML đều được gọi là một HTML elements</p>
+		
+		<h4>How an elements display on browser?</h4>
 
 		<p>HTML elements có 2 cách hiển thị khác nhau trên browser: </p>
 		<ul>
 			<li><p>Inline</p></li>
 			<li><p>Block</p></li>
 		</ul>
+
+		<p>Dạng hiển thị inline: mỗi element sẽ nằm cạnh element khác trên cùng một dòng</p>
+		<p>Dạng hiển thị block: mỗi element sẽ luôn nằm ở dòng mới. </p>
 		
-		<h3>What's HTML attriutes</h3>
+		<h3>What's HTML attributes</h3>
+		
+		<p>Các attributes được khai báo ở thẻ ở
+cấu trúc attributes được khai báo theo cặp giá trị key=value, với key là tên attribute và value là giá trị của attribute đó.</p>
+
+		<p>Mỗi elements đều có những attributes (thuộc tính) giúp bổ sung thêm các thông tin cho element đó, thay vì để nó như mặc định.</p>
+		<p>Attributes là tính chất như: màu sắc, kích cỡ, vị trí, ... của một element</p>
+		<p>Mỗi elements có rất nhiều attributes khác nhau</p>
+		<p>Mặc định một số HTML elements bắt buộc phải đi với một số attributes.</p>
+		<p>Một element có thể có những attributes riêng mà các elements khác không có.</p>
+
+		<p>Các </p>
+		<h3>Global attributes</h3>
+
+		<p>Global attributes là các thuộc tính áp dụng cho tất cả elements.</p>
+		<p>Global attributes được áp dụng cho các elements khi chúng ta muốn được tương tác tới một nhóm elements có những tính chất chung.</p>
 
 		<h3>HTML file structure?</h3>
-		<h4>What's DOCTYPE html?</h4>
-		<h4>What's head?</h4>
-		<h4>What's body?</h4>
+
+		<p>File HTML có cấu trúc như sau: </p>
+		<pre>
+		<code>
+&lt!DOCTYPE html&gt
+
+&lthtml&gt
+	&lthead&gt
+	&lt/head&gt
+
+	&ltbody&gt
+	&l/body&gt
+&lt/html&gt
+		</code>	
+		</pre>
+		<p>File gồm 4 thành phần chính</p>
+
+		<h4>What's &lt!DOCTYPE html&gt ?</h4>
+		<p>Thành phần này chịu trách nhiệm khai báo cho browser biết rằng đây là một file document HTML theo chuẩn HTML 5.</p>
+
+		<h4>What's &lthtml&gt? </h4>
+		<p>Đây được gọi là thẻ HTML root, mọi thẻ HTML khác muốn được browswer xử lý đều phải nằm trong thẻ này.</p>
+		<p>Browser sẽ dựa vào thẻ này để render nội dung trang web. </p>
+
+		<h4>What's &lthead&gt ?</h4>
+		<p>Đây là nơi hiển thị tên trang web, khai báo các tài nguyên, mô tả nội dung trang web, các metadate phục vụ trang web.</p>
+
+		<h4>What's &ltbody&gt ?</h4>
+		<p>Nơi hiển thị lên trang web người dùng nhìn thấy</p>
+		<p>Chủ yếu 90% chúng ta sử học cách sử dụng các thẻ trong body.</p>
 
 	</div>
 
 	<h2>HTML tags in head</h2>
+	<div>
+		<p>Trong thẻ head gồm có các thẻ HTML sau: </p>
+		<ul>
+			<li><p><code>&lttitle&gt</code>: Hiển thị nội dung HTML document trên thanh tab của browser</p></li>
+			<li><p><code>&ltmeta&gt</code>: sử dụng để khai báo, mô tả một số thông tin cần thiết cho trang web</p></li>
+			<li><p><code>&ltlink&gt</code>: Nhúng một cài tài nguyên bên ngoài vào trang web</p></li>
+			<li><p><code>&ltscript&gt</code>: Dùng để chứa mã JavaScript</p></li>
+			<li><p><code>&ltstyle&gt</code>: Dùng để chứa mã CSS</p></li>
+			<li><p><code>&ltbase&gt</code>: Khai báo vị trí mở các liên kết tài nguyên bên ngoài.</p></li>
+		</ul>
+	</div>
 
 	<h2>HTML basic tags in body</h2>
 
+	<div>
+		<p>Một số thẻ HTML phổ biến trong &ltbody&gt:</p>
+
+		<ul>
+			<li><p><code>&lth1&gt -> &lth6&gt</code></p></li>
+			<li><p><code>&ltp&gt</code></p></li>
+			<li><p><code>&lta&gt</code></p></li>
+			<li><p><code>&ltimg&gt</code></p></li>
+			<li><p><code>&ltul&gt &ltli&gt, &ltol&gt &ltli&gt</code></p></li>
+			<li><p><code>&lttable&gt</code></p></li>
+			<li><p><code>&ltdiv&gt</code></p></li>
+		</ul>
+
+	</div>
+
 	<h2>HTML form</h2>
 
+	<div>
+		<p>Thẻ form tạo ra các ô nhập liệu khác nhau giúp người dùng tương tác hoặc gửi dữ liệu lên trang web.</p>
+		<p>Cấu trúc thẻ form như sau: </p>
+
+		<pre><code>
+&ltform&gt
+
+... form elements
+
+&lt/form&gt</code>
+		</pre>
+		<p>Form elements gồm các thẻ mà <code>&ltform&gt</code> hỗ trợ để tạo mọi các trường input hoặc nhãn thông báo cho user biết và tương tác với web.</p>
+
+		<h3>&ltform&gt elements gồm các thẻ sau:</h3>
+
+		<ul>
+			<li><p><code>&ltinput&gt</code> - Là element phổ biến nhất trong form, input element hỗ trợ tạo nhiều trường, ô dữ liệu khác nhau thông qua attributes <code>type</code> cho user tương tác với web</p></li>
+			<li><p><code>&ltlabel&gt</code> - Tạo nhãn hướng dẫn, hỗ trợ user click vào các ô, trường dữ liệu trong <code>&ltform&gt</code>.</p></li>
+			<li><p><code>&lttextarea&gt</code> - Tạo trường nhập text cho phép user nhập nhiều dòng text</p></li>
+			<li><p><code>&ltselect&gt</code> - Tạo drop down menu cho phép user select các item trong thẻ <code>&ltoption&gt</code></p></li>
+			<li><p><code>&ltoption&gt</code> - Định nghĩa từng item trong thẻ <code>&ltselect&gt</code>, <code>&ltdatalist&gt</code> và thẻ <code>&ltoptgroup&gt</code> </p></li>
+			<li><p><code>&ltbutton&gt</code> - Tạo một nút bấm</p></li>
+			<li><p><code>&ltdatalist&gt</code> - Tạo một trường nhập các items được định nghĩa trước trong thẻ <code>&ltoption&gt</code> </p></li>
+			<li><p><code>&ltoutput&gt</code> - Hiển thị kết quả của một thẻ input nào đó</p></li>
+			<li><p><code>&ltfieldset&gt</code> - Sử dụng để nhóm một nhóm các trường, ô input có liên quan vào một nhóm</p></li>
+			<li><p><code>&ltlegend&gt</code> - Tạo một caption lên trên <code>&ltfieldset&gt</code></p></li>
+			<li><p><code>&ltoptgroup&gt</code> - Sử dụng để nhóm một nhóm các item liên quan trong thẻ <code>&ltoption&gt</code> và gán nhãn cho từng nhóm items</p></li>
+		</ul>
+
+		<h3>&ltform&gt attributes</h3>
+
+		<p>Chúng ta sẽ cùng tìm hiểu một số attributes cơ bản nhưng quan trọng của <code>&ltform&gt</code>: </p>
+
+		<ul>
+			<li>
+				<p><code>action</code> - chỉ định nơi server sẽ xử lý dữ liệu gửi lên</p>
+			</li>
+
+			<li>
+				<p><code>method</code> - Chỉ định phương thức truyền tải dữ liệu lên server (GET/POST)</p>
+				<dl>
+					<dt>GET</dt>
+					<dd>- Mục đích: chỉ phù hợp  để lấy dữ liệu từ server</dd>
+					<dd>- Cách truyền: dữ liệu được truyền trên thanh URL của browser theo cặp giá trị key=value, và bị giới hạn độ dài dữ liệu, và user có thể nhìn thấy các dữ liệu được truyền</dd>
+					<dd>- Lưu ý: Không truyền những dữ liệu nhạy cảm theo method này</dd>
+					<dt>POST</dt>
+					<dd>- Mục đích: sử dụng để gửi dữ liệu lên xử lý server</dd>
+					<dd>- Cách truyền: dữ liệu được truyền trong HTTP body an toàn hơn khi gửi các dữ liệu nhạy cảm, method này user thường sẽ không nhìn thấy dữ liệu.</dd>
+					<dd>- Lưu ý: method này không bảo mật dữ liệu, nó chỉ là không cho user thường nhìn thấy dữ liệu. Muốn bảo mật phải thêm HTTPS.</dd>
+				</dl>
+			</li>
+
+			<li>
+				<p><code>target</code> - chỉ định vị trí nơi dữ liệu trả về sẽ hiển thị tại đâu</p>
+			</li>
+
+			<li>
+				<p><code>novalidate</code> - Tắt định kiểm tra định dạng đầu vào các input trong <code>&ltform&gt</code></p>
+			</li>
+
+			<li>
+				<p><code>autocomplete</code> - Có 2 trang thái cho attribute này <code>on/off</code>. Nếu là <code>on</code> thì các các input nhập liệu sẽ tự động lưu các giá trị nhập trước đó, ngược lại thì sẽ là <code>off</code> </p>
+			</li>
+		</ul>
+		<h3>&ltinput&gt types:</h3>
+		<ul>
+			<li><p><code>text</code></p></li>
+			<li><p><code>number</code></p></li>
+			<li><p><code>password</code></p></li>
+			<li><p><code>email</code></p></li>
+			<li><p><code>radio</code></p></li>
+			<li><p><code>checkbox</code></p></li>
+			<li><p><code>submit</code></p></li>
+			<li><p><code>button</code></p></li>
+			<li><p><code>reset</code></p></li>
+			<li><p><code>image</code></p></li>
+			<li><p><code>file</code></p></li>
+			<li><p><code>tel</code></p></li>
+			<li><p><code>range</code></p></li>
+			<li><p><code>time</code></p></li>
+			<li><p><code>date</code></p></li>
+			<li><p><code>date-local</code></p></li>
+			<li><p><code>week</code></p></li>
+			<li><p><code>month</code></p></li>
+			<li><p><code>search</code></p></li>
+			<li><p><code>hidden</code></p></li>
+			<li><p><code>url</code></p></li>
+			<li><p><code>color</code></p></li>
+		</ul>
+
+		<h3>Form elemtents attributes</h3>
+		<p> Attribute <code>for</code> của thẻ <code>&ltlabel&gt</code>: giúp xác định đâu tên input thuộc về nhãn nào, là trợ năng giúp user dễ dàng click vào các vùng nhỏ.</p>
+		<p> Attribute <code>name</code> của thẻ <code>&ltinput&gt</code>, <code>&ltselect&gt</code>, <code>&lttextarea&gt</code>, <code>&ldatalist&gt</code> và <code>&ltoptgroup&gt</code>: kết hợp với attribute <code>for</code> của thẻ <code>&ltlable&gt</code> giúp xác định input đó thuộc về nhãn nào (lưu ý: <code>name</code> và <code>for</code> phải cùng tên).</p>
+		<p>Còn một số thuộc tính khác như: <code>size, selected, rows, cols, value, maxlength</code> chúng ta sẽ thị phạm code dễ hiểu hơn.</p>
+	</div>
+
 	<h2>HTML text formating</h2>
+	<p>HTML hỗ trợ các thẻ giúp dev xử lý các các đoạn văn bản như: đánh dấu, gạch chân, nổi bật, chữ nhỏ, ...</p>
+	<p>Các thẻ HTML text formating bao gồm: </p>
+	<ul>
+		<li><p><code>&lti&gt</code> - Như vậy <i>Chữ nghiêng</i></p></li>
+		<li><p><code>&ltmark&gt</code> - Higlight chữ như vậy: <mark>mark this</mark></p></li>
+		<li><p><code>&ltb&gt</code> - Như vậy <b>Chữ đậm</b></p></li>
+		<li><p><code>&ltstrong&gt</code> - Như vậy <strong>Chữ đậm và quan trọng</strong> cho sreen reader biết đó là các chữ quan trọng</p></li>
+		<li><p><code>&ltem&gt</code> - Như vậy <i>Emphasize</i> chữ quan trọng không in đậm</p></li>
+		<li><p><code>&ltins&gt</code> - Như vậy <ins>Gạch chân</ins></p></li>
+		<li><p><code>&ltdel&gt</code> - Như vậy <del>Gạch ngang chữ</del></p></li>
+		<li><p><code>&ltsmall&gt</code> - Chữ nhỏ <small>small word</small></p></li>
+		<li><p><code>&ltsub&gt</code> - Như vậy <sub>hihi</sub></p></li>
+		<li><p><code>&ltsup&gt</code> - Như vậy <sup>haha</sup></p></li>
+	</ul>
 
 	<h2>HTML display special characters</h2>
 
 	<h2>HTML semantics</h2>
+	<p>HTML semantics là gì? Hiểu đơn giản nó là cách chúng ta hãy sử dụng các thẻ HTML vào đúng mục đích sử dụng của nó, giúp cho dev và screen reader đọc đều hiểu cấu trúc trang web.</p>
+
+	<p>Ví dụ: Muốn tạo một button ta lại đi sử dụng thẻ <code>&ltdiv&gt</code> thay vì thẻ <code>&ltbutton&gt</code>, điều đó là sai không đúng theo HTML semantics.</p>
 	<hr>
 
-	<h2>Chat GPT 20 Question for me</h2>
+	<h2>ChatGPT ask 20 question for me and me answers</h2>
+	<ol>
+		<li>
+			<p><b>Semantic HTML là gì? Kể tên 5 thẻ semantic.</b></p>
+			<p>- Semantic HTML là cách sử dụng các thẻ HTML có ý nghĩa, đúng mục đích chức năng của thẻ HTML đó. Sử dụng Semantic HTML giúp dev và browser có thể dễ dàng hiểu được cách tổ chức cấu trúc của trang web.</p>
+			<p>- 5 loại thẻ semantic:</p>
+			<ul>
+				<li>&ltheader&gt</li>
+				<li>&ltnav&gt</li>
+				<li>&ltmain&gt</li>
+				<li>&ltasides&gt</li>
+				<li>&ltfooter&gt</li>
+			</ul>
+		</li>
 
-	<h2>Chat GPT 3 Projects</h2>
+		<li>
+			<p><b>Sự khác nhau giữa &ltstrong&gt và &ltb&gt?</b></p>
+			<p>- &ltstrong&gt làm nổi bật đoạn text nó chứa, giúp screen reader biết rằng đây là đoạn text quan trọng và được nhấn mạnh.</p>
+			<p>- &ltb&gt tô đậm đoạn text mà nó chứa</p>
+		</li>
+
+		<li>
+			<p><b>Sự khác nhau giữa &ltem&gt và &lti&gt?</b></p>
+
+			<p>- &ltem&gt nhấn mạnh đoạn text mà nó chứa.</p>
+			<p>- &lti&gt in nghiêng đoạn text mà nó chứa.</p>
+		</li>
+
+		<li>
+			<p><b>Thẻ &ltmeta viewport&gt dùng để làm gì?</b></p>
+			<p>&ltmeta viewport&gt dùng để khai báo cho browser biết cách hiển thị nội dung của trang web ở những màn hình có kích thước khác nhau. Hay còn gọi là sponsive.</p>
+		</li>
+
+		<li>
+			<p><b>Global attributes là gì?</b></p>
+			<p>Global attributes là các attributes áp dụng cho tất cả các thẻ HTML trong thẻ &ltbody&gt, mọi elements trong thẻ HTML &ltbody&gt đều phải có chúng.</p>
+		</li>
+
+		<li>
+			<p><b>Khi nào dùng GET, khi nào dùng POST?</b></p>
+			<p>GET: dùng khi chúng ta truyền những tham số yêu cầu server lấy dữ liệu về, dữ liệu truyền lên không quan trọng có thể được nhìn thấy bởi user thường.</p>
+			<p>POST: dùng để gửi dữ liệu lên server cho server xử lý, dùng để truyền dữ liệu nhạy cảm không muốn cho user thường nhìn thấy.</p>
+		</li>
+
+		<li>
+			<p><b>Thuộc tính required hoạt động thế nào?</b></p>
+			<p>required bắt buộc user được được bỏ trống trường input.</p>
+		</li>
+
+		<li>
+			<p><b>Vì sao luôn phải có alt trong &ltimg&gt?</b></p>
+			<p>Trong thẻ &ltimg&gt chúng ta phải luôn có thuộc tính alt, giúp mô tả nội dung bức ảnh phòng trường hợp khi ảnh tải thất bại do mạng hoặc ảnh lỗi. Để screen reader và user biết rằng chỗ đó là một bức ảnh và chứa nội dung như vậy.</p>
+		</li>
+
+		<li>
+			<p><b>Sự khác nhau giữa inline và block element?</b></p>
+			<p>- inline - các elements hiển thị nối tiếp trên cùng một dòng.</p>
+			<p>- bock - mỗi elements hiển thị trên một dòng mới</p>
+		</li>
+
+		<li>
+			<p><b>name trong &ltinput&gt có vai trò gì?</b></p>
+			<p>Thuộc tính name trong &ltinput&gt có vai trò giúp thẻ &ltlabel&gt kết hợp với thuộc tính for xác định ô nhập liệu của tên nhãn đó, là trợ năng giúp user dễ dàng click vào các vùng khó.</p>
+		</li>
+
+		<li>
+			<p><b>Sự khác nhau giữa id và class?</b></p>
+			<p>- id đặt tên duy nhất, không được phép trùng tên với các elements khác.</p>
+			<p>- class đặt tên cho một nhóm elements mà chúng ta muốn nó có chung một tính chất gì đó.</p>
+		</li>
+
+		<li>
+			<p><b>rel="noopener" trong &lta target="_blank"&gt để làm gì?</b></p>
+			<p>Chưa biết câu trả lời, nhưng trả lời tạm thời như sau:</p>
+			<p>- Trong thuộc tính targer chỉ định nơi hiển thị của nội dung của link, mặc định thuộc tính target là _self tức là mở đè lên trang hiện tại. Tuy nhiên chúng ta có thể chỉ định thêm các giá trị khác _blank hiển thị ở tab mới, _parent hiển thị ở thẻ cha chứa nó, ...</p>
+		</li>
+
+		<li>
+			<p><b>Thẻ nào dùng để nhúng video?</b></p>
+			<p> Để nhúng một video vào trang web HTML hỗ trợ thẻ &ltvideo&gt và thẻ &ltsource&gt để lấy nguồn video.</p>
+		</li>
+
+		<li>
+			<p><b>placeholder khác gì label?</b></p>
+			<p>- placeholder: hiển thị một đoạn text mờ trong ô nhập liệu, cho user biết ô đó nhập thông tin gì khi user click vào nhập thông tin thì text mờ đó sẽ biến mất đi.</p>
+			<p>- label: hiển thị một đoạn text trên ô nhập liệu, cho user biết ô đó nhập thông tin gì. Giúp user dễ dàng focus vào ô nhập liệu và biết được lable đó thuộc về ô nhập liệu nào thông qua thuộc tính for trong lable.</p>
+		</li>
+
+		<li>
+			<p><b>Sự khác nhau giữa div và section?</b></p>
+			<p>- div - chỉ đơn giản là một thẻ HTML không có ý nghĩa gì, thường dùng để làm container.</p>
+			<p>- section - là một thẻ HTML giúp chúng ta chứa các thành phần layout của một trang web.</p>
+		</li>
+
+		<li>
+			<p><b>data-* attribute dùng để làm gì?</b></p>
+			<p>Chưa có câu trả lời</p>
+		</li>
+
+		<li>
+			<p><b>pattern trong input hoạt động ra sao?</b></p>
+			<p>- pattern trong &ltinput&gt hoạt động dựa trên thuộc tính type, tuỳ vào giá trị chúng ta truyền vào trong thuộc tính type thì input sẽ hiển thị các cách và chức năng khác nhau.</p>
+		</li>
+
+		<li>
+			<p><b> table nên dùng khi nào?</b></p>
+			<p>- &table& chỉ nên dùng vào đúng mục đích của nó là tạo bảng trong trang web.</p>
+		</li>
+		<li>
+			<p><b>script async khác defer như thế nào?</b></p>
+			<p>Chưa có câu trả lời!</p>
+		</li>
+		<li>
+			<p><b>HTML Entities là gì? Cho ví dụ.</b></p>
+			<p>- HTML entities là cách chúng ta hiển thị những ký tự đặc biệt lên trang web, chúng gồm những ký tự trùng với các ký tự được sử dụng trong HTML code, ký tự đặc biệt.</p>
+			<p>- Để hiển thị những ký tự này hợp lệ lên trang web, chúng ta phải sử dụng mã code do HTML cung cấp.</p>
+			<p>Ví dụ: </p>
+			<p>
+				Ký tự  <, >, " và ' được sử dụng trong HTML code vậy nên chúng ta sử dụng các mã code đặc biệt: mã &lt -> hiển thị ký tự >, mã &gt -> hiển thị ký tự >, mã &quot -> hiển thị ký tự " và mã &apos -> hiển thị ký tự
+			</p>
+		</li>
+	</ol>
+
+	<h2>ChatGPT challenged me with 3 projects</h2>
+	<p>Link Github project 1: <a href="https://github.com/vuecoder2k/Personal-Profile-Page.git">Personal-Profile-Page</a></p>
+	<p>Link Github project 2: <a href="https://github.com/vuecoder2k/Registration-Form-Page.git">Registration-Form-Page</a></p>
 </body>
 </html>
